@@ -140,3 +140,77 @@ header .logo img {
     color: white;
     margin: 10px 0 20px;
 }
+
+.banner .content .buttons {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: red;
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.banner .content .buttons a:nth-child(2) {
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.banner .content .buttons a:hover:nth-child(2) {
+    background: red;
+}
+
+.play {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.play img {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 50px;
+}
+
+.trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer .active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
